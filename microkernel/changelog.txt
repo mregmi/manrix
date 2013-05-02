@@ -1,0 +1,32 @@
+Changelogs:
+
+march 28 2005:
+	- The modules loaded by Grub are assigned fixed Tid, pid (i.e not according to the boot order).
+		
+
+march 23 2005:
+	- mmap now works fine for MAP_ANON
+
+(march 2005):
+	- Dup System Call added.
+	- mmap fixed. Now the address is first allocated from VM manager for Anonymous map.
+	- exit problem fixed. Now the exit works on call during Signal delivery.
+	- exec works (weird behaviour on first page fault).
+	- vfork works perfect (Child guranteed to run first. 
+	  Parent guranteed to run only after child either do exec or exit.)
+	- fork works (vm design issue; how to handle shadow Objects????)
+	- message Passing; MSG_LONG_RECEIVE added; Now long messages can also be received.
+	- message Passing; MSG_MAP_* problem solved; 
+	  Message can now be passed through page table mapping.
+	
+	- TLB flushed after each page table manipulation. (thanks to Brenden Trotter)
+	- argc, argv, and env now works for both exec'd programs and modules loaded by grub.
+					(fixes by Manish Regmi)
+
+(march 18 2005)
+	- BUG; In vm_map_enter address returned the start of the vm_map_entry on entry concatination.
+	 It should return the address just concatenated. FIXED... (Manish)
+
+(june 22 2005)
+	pmap.c: pmap_enter(): 224 update the page directory of each process' kernel page table part.
+	asm/spinlock.h: spin_*: * spinlock problem fixed; made recursive.

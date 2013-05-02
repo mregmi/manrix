@@ -1,0 +1,5 @@
+ChangeLogs for LIBC:
+
+march 23 2005:
+	- Size reduction using individual .o's to create .a archives.
+

@@ -1,0 +1,13 @@
+to do list.
+
+ - exec problem 
+ - vfork problem (the stack usage)
+ - fork problem (COW problem)
+ - Divide memory into DMA (< 16 MB) kernel (<512 MB) and user (rest of all)
+ - timer and sleep does not work
+ - Scheduling interactive and non interactive distinction
+ - Spinlock 
+ 				-june 21 2005
+
+
+

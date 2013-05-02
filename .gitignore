@@ -1,0 +1,4 @@
+# Dont include objects and libs
+*.o
+*.a
+*.so

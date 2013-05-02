@@ -1,0 +1,3 @@
+co::respawn:/sys/test1 1
+#46:2:respawn:/bin/getty 2
+

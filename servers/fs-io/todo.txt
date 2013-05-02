@@ -1,0 +1,4 @@
+ - EXT2 write support
+ - FAT file system driver
+ - Floppy controller (DMA problem)
+	- 21 june 2005
