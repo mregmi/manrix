@@ -1,1 +1,5 @@
-A microkernel for study purpose.
+ ManRiX OS is open source microkernel based operating system with POSIX complience.ManRiX OS is written totally from scratch using C and Assembly language. This project is started by two students of Nepal college of Inforamtion Technology (affiliated to Pokhara University) at the beginning of 2003. This project has now an aim of creating full fledged operating system. This project is distributed with GPL. ManRiX stands from our name. 'Man' stand for manish 'R' stands for Rajesh and 'iX' stands for UNIX like operating system.
+ManRiX is a tiny kernel with the few services in kernel space (i.e. Process and thread management, signals and timers, IPC, virtual memory etc) and the other services (i.e. device Driver, file system manager, console manager, bus manager etc) in user space. ManRiX supports POSIX interface. The IEEE has developed POSIX standard. This standard defines operating system interfaces and not the implementation. ManRiX works on the concept of client and server based architecture. The focus of this paper is to give overview how the ManRiX is designed. 
+
+<br>
+The other details can be studied at http://manrix.sourceforge.net/index.htm
